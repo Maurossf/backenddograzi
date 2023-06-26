@@ -1,0 +1,186 @@
+@import url("https://codesandbox.io/p/sandbox/backend-forked-7i5jdj?file=%2Fsrc%2Fdata%2Fdb.json%3A1%2C1");
+
+html {
+  color-scheme: ;
+}
+
+.tabela_dados {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.tabela {
+  min-width: 500px;
+  background: #323232;
+  padding: 1rem;
+  border-collapse: collapse;
+}
+
+.tabela caption {
+  text-transform: uppercase;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+.tabela th,
+.tabela td,
+.tabela caption {
+  padding: 1.1rem;
+}
+
+.tabela th {
+  background: hsl(0 0% 0% / 0.5);
+}
+
+.tabela tr td:nth-child(1),
+.tabela tr td:nth-child(3),
+.tabela tr td:nth-child(4) {
+  text-align: center;
+}
+
+.tabela tr td:nth-child(4) button {
+  margin-right: 5px;
+}
+
+.tabela tr:nth-of-type(2n) {
+  background: hsl(0 0% 0% / 0.1);
+}
+
+.tabela tr:hover {
+  background: hsl(0 0% 0% / 0.2);
+}
+
+@media (max-width: 500px) {
+  .tabela {
+    min-width: 100%;
+  }
+
+  .tabela thead {
+    display: none;
+  }
+
+  .tabela tr td {
+    display: grid;
+    grid-template-columns: 15ch auto;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .tabela tr td:last-child {
+    grid-template-columns: auto auto;
+  }
+
+  .tabela tr td:nth-child(1),
+  .tabela tr td:nth-child(3),
+  .tabela tr td:nth-child(4) {
+    text-align: left;
+  }
+
+  .tabela tr td:nth-child(1)::before,
+  .tabela tr td:nth-child(2)::before,
+  .tabela tr td:nth-child(3)::before {
+    content: attr(data-cell);
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+}
+
+.controlbar {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 1rem;
+  align-items: center;
+}
+
+.controlbar div span {
+  margin-right: 10px;
+}
+.controlbar div select {
+  width: 70px;
+  text-align: right;
+  height: 1.8rem;
+}
+
+.pesquisar {
+  position: relative;
+  width: 150px;
+  height: 75px;
+  top: 10px;
+  left: 650px;
+  right: ;
+}
+
+.nomes {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  top: ;
+  left: 100px;
+}
+
+.limpar {
+  position: relative;
+  width: 150px;
+  height: 75px;
+  top: 10px;
+  left: 320px;
+}
+
+.tamanho {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  top: ;
+  left: 20px;
+}
+
+.cor {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  top: ;
+  left: 20px;
+}
+
+.sexo {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  top: ;
+  left: 20px;
+}
+
+.categoria {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  top: ;
+  left: 20px;
+}
+
+.valor {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  top: ;
+  left: 20px;
+}
+
+.alterar {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  top: ;
+  left: 20px;
+}
+
+.excluir {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  top: ;
+  left: 20px;
+}
